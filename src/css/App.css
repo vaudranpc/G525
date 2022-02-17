@@ -1,0 +1,228 @@
+
+body {
+    max-width: 1400px;
+    margin: 10px;
+}
+
+.logo {
+    /*max-width: 100%;
+    height: auto;*/
+    margin: 5px;
+    border: 1px solid rgb(127, 163, 231);
+    float: left;
+    width: 180px;
+    background-color: rgb(232, 240, 232);
+}
+
+.bienvenue {
+    width: 1100px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.header {
+    background-color: rgb(162, 218, 215);
+    height: 15vh;
+    width: 1400px;
+    display: flex;
+    color: black;
+    border: 1px solid;
+}
+
+/* Rodrigue */
+.message {
+    margin: auto;
+    padding: auto;
+    font-weight: bold;
+}
+
+.bodyClass {
+    width: 1400px;
+    display: flex;
+    height: 80vh;
+    background-color: whitesmoke;
+}
+
+.NavGaucheClass {
+    /*height: 100%;*/
+    display: flex;
+    width: 300px;
+    overflow-y: auto;
+    flex-direction: column;
+
+    text-align: left;
+    margin: 10px;
+}
+
+li:hover {
+    background-color: #b414ba;
+}
+
+li:active {
+    color: #4CAF50;
+}
+
+.NavDroiteClass {
+    height: 100%;
+    display: flex;
+    width: 300px;
+    overflow-y: auto;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.divComptage {
+    height: 100%;
+    display: flex;
+    width: 1100px;
+    max-width: 1100px;;
+    overflow-y: hidden;
+    flex-direction: column;
+    background-color: #eceef5;
+}
+
+.libComptage {
+    margin: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.elemTable {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButton {
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+}
+
+table {
+    /*border: 2px solid forestgreen;*/
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid black;
+    /*justify-content: left;*/
+    /*text-align: center;*/
+}
+
+td {
+    /*text-align: center;*/
+    /*text-align: left;*/
+}
+
+
+/* FOOTER */
+.footer {
+    justify-content: center;
+    display: flex;
+    height: 12vh;
+    width: 1400px;
+    background-color: rgb(162, 218, 215);
+    border: 1px solid;
+    font-size: 13px;
+}
+
+.footerGauche {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: large;
+    font-weight: 900;
+}
+
+.nomGroupe {
+    padding-right: 1vw;
+    width: 300px;
+    font-weight: 900;
+    font-size: 13px;
+    margin: 0.5rem;
+}
+
+.infosEquipe {
+    display: flex;
+    font-size: x-small;
+}
+
+/* CSS des 2 boutons de la NavDroite*/
+.btn {
+    background-color: #e2eee2;
+    border: 1px solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    width: 25vh;
+}
+
+.btn:hover {
+    background-color: #b414ba;
+}
+
+.btn-active {
+    background-color: #4CAF50;
+    border: 1px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    width: 25vh;
+}
+
+/*Rodrigue - Code rapporte */
+
+.button {
+    padding: 15px 100px;
+    margin: 10px 4px;
+    color: #eee;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: scaleY(0.1);
+    transform: scaleY(0.1);
+    transition: all 0.4s;
+}
+
+.button:hover {
+    color: #b414ba;
+}
+
+.button:hover::before {
+    opacity: 1;
+    background-color: #f7c2f9;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity 0.4s;
+    transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+}
